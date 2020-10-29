@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="./styles/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+
+
+    <title>Toggle</title>
+</head>
+<body>
+    <nav>
+        <span style="color: #505050;">a cool app</span>
+            <main id="main">
+                    <div class="line1" id="line1"></div>
+                    <div class="line2" id="line2"></div>
+                    <div class="line3" id="line3"></div>
+            </main>
+    </nav>
+    <div class='menu' id="menu">
+        <ul>
+            <li> login </li>
+            <li> signup </li>
+            <li> contact </li>
+        </ul>
+    </div>
+    
+
+    <script>
+            var mainn= document.getElementById("main"); 
+            var line1= document.getElementById("line1"); 
+            var line2= document.getElementById("line2"); 
+            var line3= document.getElementById("line3"); 
+            var menu= document.getElementById("menu"); 
+            mainn.addEventListener('click', function(){
+
+                line1.classList.toggle("line11"); 
+                line2.classList.toggle("line22"); 
+                line3.classList.toggle("line33");
+                menu.classList.toggle("menu2");
+            })
+        </script>
+</body>
+</html>
