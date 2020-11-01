@@ -1,5 +1,7 @@
 const li= document.querySelectorAll('li'); 
 const underline= document.querySelector(".underline"); 
+
+ 
 li.forEach(item=>{
     item.addEventListener('click', function(){
         const coords= item.getBoundingClientRect();

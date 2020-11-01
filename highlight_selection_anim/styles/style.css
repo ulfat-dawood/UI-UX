@@ -43,7 +43,6 @@ ul .underline {
   height: 3px;
   background: #7A7D7D;
   border-radius: 4px;
-  z-index: 1;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
