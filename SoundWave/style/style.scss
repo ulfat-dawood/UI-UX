@@ -16,6 +16,17 @@ body{
 	background: hsl(240, 15%, 20%); 
 	font-size: 3rem;
 }
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.main-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
 .brand-logo{
 	display:flex; 
 	align-items: center;
@@ -29,8 +40,10 @@ body{
 	ul li{
 	display: inline-block;
 	padding-left:50px;
-		&:hover {
-			color:#941c1c; 
+		a{
+			&:hover {
+				color: #d0d0d0;
+			}
 		}
 	}
 }
