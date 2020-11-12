@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  list-style: none;
+  text-decoration: none;
+  color: #505050;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #F8F8F8;
+  font-size: 3rem;
+}
+/*# sourceMappingURL=style.css.map */

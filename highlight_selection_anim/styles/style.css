@@ -12,6 +12,10 @@
 body {
   background: #d0cfcf;
   text-align: left;
+  height: 250px;
+  width: 250px;
+  border: 1px solid black;
+  margin: 10px;
 }
 
 ul {
@@ -21,7 +25,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 150px auto;
+  margin: 100px auto;
   border-radius: 4px;
   background: #e4e1e3;
   width: -webkit-fit-content;

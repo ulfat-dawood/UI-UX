@@ -1,0 +1,19 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing: content-box;
+	list-style: none;      // remove bullet point from <ul>
+	text-decoration:none; //remove underline from <a>
+	color: #505050; 
+}
+
+html{
+	font-size:62.5%  //1rem  = 10px 
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	background: #F8F8F8; 
+	font-size: 3rem;
+
+}
