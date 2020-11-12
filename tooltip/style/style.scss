@@ -15,5 +15,66 @@ body{
 	font-family: 'Lato', sans-serif;
 	background: #F8F8F8; 
 	font-size: 3rem;
+	display:flex; 
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+$width: 100px; 
+$arrow-height: 1.4rem; 
+.button{
+	height:50px;
+	line-height: 50px;
+	width: $width; 
+	background: #404040;
+	border-radius: 5px;
+	text-align:center; 
+	font-size: 2rem; 
+	color: #a0a0a0;
+	position: relative;
+}
+
+//before > the tooptip
+//after > the triangle
+
+//position both: 
+.button::after, 
+.button::before{
+	 
+	position: absolute; 
+	left:50%; 
+	top:-$arrow-height; 
+	transform: translate(-50%, -100%) scale(0); 	
 
 }
+
+//style the tooltipl: 
+.button::before{
+	content:attr(data-tooltip);
+	width: $width; 
+	border-radius: 5px;
+	padding: .5rem; 
+	background: #a0a0a080;
+	color: #808080; 
+	line-height: normal; 
+	transition: all .3s ease;
+	transform-origin: center bottom;
+}
+//when button hovered> ::before appears
+.button:hover::before,.button:hover::after{
+	transform: translate(-50%, -100%) scale(1);
+}
+
+//style the arrow: 
+.button::after{
+	content: '';
+	border : $arrow-height solid transparent;
+	border-top-color: #a0a0a080;  
+	width: 0px;
+	height: 0px; 
+	color: #808080;
+	top:$arrow-height; 
+	transition: all .5s ease;
+	transform-origin: center top;
+}
+
