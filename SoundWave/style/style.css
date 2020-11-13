@@ -23,6 +23,16 @@ body {
   margin: 0 auto;
 }
 
+.full-height-grow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .main-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,6 +43,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 30px;
 }
 
 .brand-logo {

@@ -1,0 +1,50 @@
+.title{
+    font-weight: 500;
+    font-size: 4rem;
+    margin-bottom: em;
+    margin-top:0; 
+
+}
+
+.home-main-section{
+	.btn{
+		background: hsl(240, 50%, 50%);
+		padding: .5em; 
+		border-radius: 5px;
+		font-size: 2rem;
+	}
+}
+
+.home-main-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1; 
+
+
+    .image-wrapper{
+        flex-grow:1;
+        display: flex;
+        flex-direction: column;
+        align-items:stretch; 
+        justify-content: flex-end;
+
+
+        .lady-image{
+            background-image: url(../img/water.png);
+            flex-grow: 1;
+            min-height: 100vh;
+            min-width: 30vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:center center ;
+        }
+    }
+}
+
+.call-to-action{
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    
+}

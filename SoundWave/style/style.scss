@@ -20,10 +20,16 @@ body{
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
+.full-height-grow{
+	display: flex;
+	flex-direction: column;
+}
 .main-header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 30px; 
 	
 }
 
@@ -47,5 +53,7 @@ body{
 		}
 	}
 }
+
+
 
     
