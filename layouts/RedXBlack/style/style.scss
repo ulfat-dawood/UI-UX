@@ -25,6 +25,13 @@ h1{
 	font-family: 'Lobster', cursive;
 	font-weight:lighter; 
 }
+h2{
+	font-family: 'Lobster', cursive;
+	font-weight:lighter; 
+	font-size: 5rem;
+
+
+}
 h3{
 	font-size: 3.5rem;
 }
@@ -42,3 +49,6 @@ a{
 }
 
 @import "home"; 
+@import "features";
+@import "soon"; 
+@import "footer"; 
