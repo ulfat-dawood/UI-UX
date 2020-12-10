@@ -38,8 +38,7 @@ p{font-size:2rem;}
     padding: 1.5rem; 
 }
 .default-nav, .logo{
-    transition: all .5s ease; 
-    
+    transition: all .5s ease;
 }
 .scroll-nav{
     background: #fff;
