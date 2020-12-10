@@ -1,0 +1,47 @@
+/* GENERAL */
+*,*::before,*::after{
+	padding:0;
+	margin:0;
+	box-sizing: content-box;
+	list-style: none;      /*remove bullet point from lists*/
+	text-decoration:none; /*remove underline from <a>*/
+    color: #000; 
+
+}
+
+html{
+    font-size:62.5%;  /*1rem  = 10px*/ 
+    scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	background: #F8F8F8; 
+    font-size: 3rem;
+}
+.container{
+    width:80%;
+    margin:auto;
+}
+
+/* TYPOGRAPHY */
+h1{font-size:9rem;}
+h2{font-size:5rem;}
+h4{font-size:3rem;}
+p{font-size:2rem;}
+
+nav{
+    position: sticky; 
+    top:0; 
+    padding: 3rem;
+    background: #dbdbdb; 
+    padding: 1.5rem; 
+}
+nav, .logo{
+    transition: all .5s ease; 
+}
+section{
+    background: #909090; 
+    margin:3rem; 
+    height: 450px;
+}
