@@ -30,16 +30,24 @@ h2{font-size:5rem;}
 h4{font-size:3rem;}
 p{font-size:2rem;}
 
-nav{
+.default-nav{
     position: sticky; 
     top:0; 
     padding: 3rem;
     background: #dbdbdb; 
     padding: 1.5rem; 
 }
-nav, .logo{
+.default-nav, .logo{
     transition: all .5s ease; 
+    
 }
+.scroll-nav{
+    background: #fff;
+}
+.scroll-nav .logo{
+    font-size: 5rem;
+}
+
 section{
     background: #909090; 
     margin:3rem; 

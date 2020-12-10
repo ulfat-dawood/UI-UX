@@ -1,18 +1,13 @@
 window.addEventListener('scroll', ()=>{
-    const header= document.querySelector('nav');
-    const logo= document.querySelector('nav .logo')
+    const nav= document.querySelector('.default-nav');
 
     if(window.pageYOffset > 50){
-        logo.style.fontSize= "5rem";
-        header.style.background= "#fff";
+        nav.classList.add('scroll-nav');
+
     }else{
-        logo.style.fontSize="9rem";
-        header.style.background= "#dbdbdb";
-
-
+        nav.classList.remove('scroll-nav');
     }
-
-})
+}); 
 
 
 
