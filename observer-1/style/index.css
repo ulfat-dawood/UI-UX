@@ -1,0 +1,10 @@
+section{
+    height: 95vh; width:95%;
+    margin: 2rem auto;
+    background: #f5f5fa;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.inverse{
+    background: #ccc;
+}
