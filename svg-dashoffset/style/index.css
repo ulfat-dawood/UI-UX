@@ -1,2 +1,13 @@
+#square{
+    stroke-dasharray:30;
+    /* stroke-dasharray:320;
+    stroke-dashoffset: 320;
+    animation: dash 1.5s linear forwards infinite alternate-reverse; */
+}
 
 
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
