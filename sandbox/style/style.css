@@ -1,0 +1,39 @@
+@import "./index.css" ;
+
+/* COLORS */
+:root{
+    --bg-d: #0D102B; 
+    --bg-l: hsl(234, 5%, 15%); 
+    --grey: #909090; 
+    --text: #303030; 
+}
+/* RESETTING */
+*,*::before,*::after{
+	padding:0;
+	margin:0;
+	box-sizing: content-box;
+	list-style: none;      /* remove bullet point from lists */
+	text-decoration:none; /* remove underline from <a> */
+	color: var(--text); 
+}
+
+html{
+	font-size:62.5%  /* 1rem  = 10px */
+}
+
+body{
+	font-family: 'Varela Round', sans-serif;
+	background: var(--bg-d); 
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+/* TYPOGRAPHY  */
+h1{font-size: 4rem; color:#FF156D;}
+h3{font-size: 3.5rem;}
+h4{font-size: 3rem;}
+p{font-size: 2.5;}
+li{font-size: 2rem;}
+
+
+

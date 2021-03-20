@@ -1,3 +1,5 @@
+//We don't want to observe the coordinates of the entire viewport (onScroll event)
+//rather, we observe only the coordinates of the elements below (Intersection Observer)
 const section1 = document.querySelector("#section-1"); 
 const section2 = document.querySelector("#section-2"); 
 const section3 = document.querySelector("#section-3"); 
@@ -19,10 +21,10 @@ const options = {
     threshold: .5, // 0-1 where 
                     //.25=> fires the entry ONLY when 25% of it is in the viewport
                     //  1=> fires the entry ONLY when 100% of it is in the viewport
-    rootMargin: "0px" //px or % string value, clockwise or shorthand
+    rootMargin: "0px" //px or % value, clockwise or shorthand
                   //rootMargin creates an imaginary viewport that is 
-                  //------smaller than the actual viewport if margin is negative, 
-                  //------larger than the actual viewport, if margin is positive.
+                  //------smaller than the actual viewport if margin is negative, (trigger animations )
+                  //------larger than the actual viewport, if margin is positive. (trigger lazy load images)
 };
 const observer = new IntersectionObserver(callback, options);
 

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="./style/style.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+                integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+                crossorigin="anonymous" />
+
+        <title>Sandbox</title>
+</head>
+
+<body>
+        <h1>Animation Sandbox</h1>
+
+        <div class="container">
+                <form id="duration" class="flex-container">
+                        <div class="prop">Duration</div>
+                       <div class="flex">
+                        <input type="radio" id="duration1" value="1s" name="duration" checked>
+                        <label for="duration1">1 second</label>
+
+                        <input type="radio" id="2duration" value="2s" name="duration">
+                        <label for="2duration">2 seconds</label>
+
+                        <input type="radio" id="3duration" value="3s" name="duration">
+                        <label for="3duration">3 seconds</label>
+                       </div>
+                </form>
+
+
+                <form id="timing-func" class="flex-container">
+                        <div class="prop">Timing Function</div>
+                        <div class="flex">
+                                <input type="radio" id="linear" value="linear" name="func">
+                        <label for="linear">linear</label>
+
+                        <input type="radio" id="ease" value="ease" name="func">
+                        <label for="ease">ease</label>
+
+                        <input type="radio" id="ease-in" value="ease-in" name="func">
+                        <label for="ease-in">ease-in</label>
+
+                        <input type="radio" id="ease-out" value="ease-out" name="func">
+                        <label for="ease-out">ease-in</label>
+
+                        <input type="radio" id="ease-in-out" value="3s" name="func">
+                        <label for="ease-in-out">ease-in-out</label>
+                        </div>
+                </form>
+
+
+
+                <form id="delay" class="flex-container">
+                        <div class="prop">Delay</div>
+                        <div class="flex">
+                                <input type="radio" id="0delay" value="0s" name="delay">
+                        <label for="0delay">0 second</label>
+
+                        <input type="radio" id="1delay" value="1s" name="delay">
+                        <label for="1delay">1 second</label>
+
+                        <input type="radio" id="2delay" value="2s" name="delay">
+                        <label for="2delay">2 seconds</label>
+
+                        <input type="radio" id="3delay" value="3s" name="delay">
+                        <label for="3delay">3 seconds</label>
+                        </div>
+                </form>
+
+
+                <form id="iteration" class="flex-container">
+                        <div class="prop">Iteration Count</div>
+                        <div class="flex">
+                                <input type="radio" id="1-iteration" value="1" name="iteration" checked>
+                                <label for="1-iteration">1</label>
+        
+                                <input type="radio" id="2-iteration" value="2" name="iteration">
+                                <label for="2-iteration">2</label>
+        
+                                <input type="radio" id="infinite-iteration" value="infinite" name="iteration">
+                                <label for="infinite-iteration">infinite</label>
+                        </div>
+                </form>
+
+                <form id="direction" class="flex-container">
+                        <div class="prop">Direction</div>
+                        <div class="flex">
+                                <input type="radio" id="normal" value="normal" name="direction">
+                                <label for="normal">normal</label>
+        
+                                <input type="radio" id="reverse" value="reverse" name="direction">
+                                <label for="reverse">reverse</label>
+        
+                                <input type="radio" id="alternate" value="alternate" name="direction">
+                                <label for="alternate">alternate</label>
+        
+                                <input type="radio" id="alternate-reverse" value="alternate-reverse" name="direction">
+                                <label for="alternate-reverse">alternate-reverse</label>
+                        </div>
+                </form>
+
+                <form id="fill-mode" class="flex-container">
+                        <div class="prop">Fill Mode</div>
+                        <div class="flex">
+                                <input type="radio" id="forwards" value="forwards" name="fill-mode">
+                                <label for="forwards">forwards</label>
+        
+                                <input type="radio" id="backwards" value="backwards" name="fill-mode">
+                                <label for="backwards">backwards</label>
+        
+                                <input type="radio" id="both" value="both" name="fill-mode">
+                                <label for="both">both</label>
+                        </div>
+                </form>
+
+                <form id="play-state" class="flex-container">
+                        <div class="prop">Play State</div>
+                        <div class="flex">
+                                <input type="radio" id="paused" value="paused" name="play-state">
+                                <label for="paused">paused</label>
+        
+                                <input type="radio" id="running" value="running" name="play-state">
+                                <label for="running">running</label>
+                        </div>
+                </form>
+
+
+                <div style="display: block; margin: auto; margin-bottom: 1rem;">
+                        <button id="play"><i class="fas fa-play"></i></button>
+                        <button id="remove"><i class="fas fa-stop"></i></button>
+                        <button id="reset"><i class="fas fa-undo-alt"></i></button>
+                </div>
+
+                <div class="box-container">
+                        <div id="box"></div>
+                </div>
+        </div>
+
+
+
+
+
+
+        <script src="./app.js"></script>
+</body>
+
+</html>
